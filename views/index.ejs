@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Morse Code Translator</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Morse Code Translator</h1>
+
+      <form action="/translate" method="POST">
+        <input
+          type="text"
+          name="text"
+          placeholder="Enter text"
+          required
+          autocomplete="off"
+        />
+        <button type="submit">Translate</button>
+      </form>
+      <form action="/decode" method="POST">
+        <label for="morse">Enter Morse Code:</label>
+        <textarea name="morse" id="morse" rows="4"></textarea>
+        <button type="submit">Decode</button>
+      </form>
+    </center>
+  </body>
+</html>
